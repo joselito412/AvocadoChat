@@ -1,0 +1,4 @@
+/node_modules
+.env
+echo "src/credentials/credentials.json" >> .gitignore
+echo "meta-chatbot-key.json" >> .gitignore
