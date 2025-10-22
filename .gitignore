@@ -1,42 +1,19 @@
-# ----------------------------------------------------
-# 1. DEPENDENCIAS Y BINARIOS LOCALES (NUNCA SUBIR)
-# ----------------------------------------------------
 /node_modules
 /npm-debug.log
 /yarn-error.log
 /pnpm-debug.log
 .DS_Store
-
-# ----------------------------------------------------
-# 2. SECRETOS Y CONFIGURACIONES DE ENTORNO (CRÍTICO)
-# ----------------------------------------------------
 .env
 .env.*
 .env.*.local
 .env.local
-
-# ----------------------------------------------------
-# 3. SUPABASE EDGE FUNCTIONS (Archivos Temporales y Caché)
-# ----------------------------------------------------
+/supabase/db/
 /supabase/.temp/
 /supabase/functions/*/node_modules/
 /supabase/functions/*/deno.lock
-/supabase/migrations/
-/supabase/seed.sql
-
-# ----------------------------------------------------
-# 4. GOOGLE CLOUD/PYTHON (profile-orchestrator)
-# ----------------------------------------------------
 /profile-orchestrator/__pycache__/
 /profile-orchestrator/venv/
 *.pyc
-
-# ----------------------------------------------------
-# 5. CREDENCIALES Y CLAVES DE SERVICIO
-# ----------------------------------------------------
-# Claves de Meta o Google que pueden haber sido guardadas
 src/credentials/credentials.json
 meta-chatbot-key.json
-
-# Excluir el archivo de sesión de Supabase CLI
 .supabase/
